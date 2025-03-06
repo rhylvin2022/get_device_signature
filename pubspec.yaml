@@ -1,15 +1,20 @@
 name: get_device_signature
 description: A Flutter plugin to retrieve the device's app signature.
-version: 1.0.0
+version: 0.0.1
 repository: https://github.com/yourusername/get_device_signature
 homepage: https://github.com/yourusername/get_device_signature
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=1.10.0"
 
 dependencies:
   flutter:
     sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  plugin_platform_interface: ^2.1.4
 
 flutter:
   plugin:

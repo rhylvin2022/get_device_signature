@@ -8,8 +8,7 @@ class GetDeviceSignature {
       final String? signature =
           await _channel.invokeMethod('getDeviceSignature');
       return signature;
-    } on PlatformException catch (e) {
-      print("Failed to get signature: '${e.message}'.");
+    } on PlatformException {
       return null;
     }
   }

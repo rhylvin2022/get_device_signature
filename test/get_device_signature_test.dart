@@ -5,7 +5,6 @@ import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 class MockGetDeviceSignaturePlatform
     with MockPlatformInterfaceMixin
     implements GetDeviceSignature {
-  @override
   Future<String?> getDeviceSignature() => Future.value('mocked_signature');
 }
 
@@ -17,7 +16,6 @@ void main() {
   });
 
   test('getDeviceSignature', () async {
-    GetDeviceSignature getDeviceSignaturePlugin = GetDeviceSignature();
     MockGetDeviceSignaturePlatform fakePlatform =
         MockGetDeviceSignaturePlatform();
 
